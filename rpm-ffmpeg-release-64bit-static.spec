@@ -1,5 +1,5 @@
 Name:           ffmpeg-release-64bit-static
-Version:        3.3.2
+Version:        3.3.3
 Release:        1%{?dist}
 BuildArch:      x86_64
 URL:            https://www.johnvansickle.com/ffmpeg/
