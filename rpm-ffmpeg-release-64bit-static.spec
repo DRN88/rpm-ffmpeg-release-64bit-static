@@ -1,5 +1,6 @@
+%define version %(tar --exclude='*/*' --list -f %{_sourcedir}/ffmpeg-release-64bit-static.tar.xz | awk -F '-' '{print $2}')
 Name:           ffmpeg-release-64bit-static
-Version:        3.3.3
+Version:        %{version}
 Release:        1%{?dist}
 BuildArch:      x86_64
 URL:            https://www.johnvansickle.com/ffmpeg/
