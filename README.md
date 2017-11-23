@@ -29,10 +29,10 @@ rpmbuild -bb /root/rpmbuild/SPECS/rpm-ffmpeg-release-64bit-static.spec
 ### Artifacts
 
 ```bash
-[root@lxbuilder01 ~]# tree /root/rpmbuild/RPMS/
+[root@lxfedora27test01 ~]# tree /root/rpmbuild/RPMS/
 /root/rpmbuild/RPMS/
 └── x86_64
-    └── ffmpeg-release-64bit-static-3.3.2-1.el7.centos.x86_64.rpm
+    └── ffmpeg-release-64bit-static-3.4-1.fc27.x86_64.rpm
 
 1 directory, 1 file
 ```
