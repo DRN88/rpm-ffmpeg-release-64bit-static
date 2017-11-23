@@ -12,6 +12,21 @@ spectool -g -R /root/rpmbuild/SPECS/rpm-ffmpeg-release-64bit-static.spec
 rpmbuild -bb /root/rpmbuild/SPECS/rpm-ffmpeg-release-64bit-static.spec
 ```
 
+## Quick build on Fedora 27
+
+```bash
+sudo -i
+
+dnf -y --refresh install rpm-build rpmdevtools
+
+rpmdev-setuptree
+
+wget 'https://raw.githubusercontent.com/DRN88/rpm-ffmpeg-release-64bit-static/master/rpm-ffmpeg-release-64bit-static.spec' -O /root/rpmbuild/SPECS/rpm-ffmpeg-release-64bit-static.spec
+
+spectool -g -R /root/rpmbuild/SPECS/rpm-ffmpeg-release-64bit-static.spec
+rpmbuild -bb /root/rpmbuild/SPECS/rpm-ffmpeg-release-64bit-static.spec
+```
+
 ### Artifacts
 
 ```bash
